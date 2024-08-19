@@ -12,54 +12,68 @@ const CheckProduct = () => {
         </button>
         <div className="loopBelt absolute bottom-4 ">
           <div className="slider">
-            <ul className="flex gap-16 loop">
+            <ul className="flex gap-10 loop">
               <li>
                 <img
                   src="/images/humor-icon.webp"
                   alt=""
-                  className="w-96 h-20"
+                  className="w-[150px] h-16 "
                 />
               </li>{" "}
               <li>
                 <img
                   src="/images/humor-icon.webp"
                   alt=""
-                  className="w-96 h-20"
+                  className="w-[150px] h-16 "
                 />
               </li>{" "}
               <li>
                 <img
                   src="/images/humor-icon.webp"
                   alt=""
-                  className="w-96 h-20"
+                  className="w-[150px] h-16 "
                 />
               </li>{" "}
               <li>
                 <img
                   src="/images/humor-icon.webp"
                   alt=""
-                  className="w-96 h-20"
+                  className="w-[150px] h-16 "
                 />
               </li>{" "}
               <li>
                 <img
                   src="/images/humor-icon.webp"
                   alt=""
-                  className="w-96 h-20"
+                  className="w-[150px] h-16 "
                 />
               </li>{" "}
               <li>
                 <img
                   src="/images/humor-icon.webp"
                   alt=""
-                  className="w-96 h-20"
+                  className="w-[150px] h-16 "
                 />
               </li>{" "}
               <li>
                 <img
                   src="/images/humor-icon.webp"
                   alt=""
-                  className="w-96 h-20"
+                  className="w-[150px] h-16 "
+                />
+              </li>{" "}
+              <li>
+                <img
+                  src="/images/humor-icon.webp"
+                  alt=""
+                  className="w-[150px] h-16 "
+                />
+              </li>{" "}
+              <li>
+                <img
+                  src="/images/humor-icon.webp"
+                  alt=""
+                  className="w-[150px] h-16 "
                 />
               </li>
             </ul>

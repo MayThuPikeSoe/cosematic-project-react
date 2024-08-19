@@ -7,45 +7,40 @@ import gsap from "gsap";
 import "./js/app.js";
 import CheckProduct from "./components/CheckProduct";
 import { useEffect } from "react";
+import ProductList from "./components/ProductList.jsx";
+
 const App = () => {
   useEffect(() => {
-    let panels = gsap.utils.toArray(".panel");
+    setTimeout(() => {
+      // Select only panels with the class "scroll-panel"
+      let panels = gsap.utils.toArray(".scroll-panel");
 
-    let tops = panels.map((panel) =>
-      ScrollTrigger.create({ trigger: panel, start: "top top" })
-    );
+      let tops = panels.map((panel) =>
+        ScrollTrigger.create({ trigger: panel, start: "top top" })
+      );
 
-    panels.forEach((panel) => {
-      ScrollTrigger.create({
-        trigger: panel,
-        start: () =>
-          panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom",
-        pin: true,
-        pinSpacing: false,
+      panels.forEach((panel) => {
+        ScrollTrigger.create({
+          trigger: panel,
+          start: () =>
+            panel.offsetHeight < window.innerHeight
+              ? "top top"
+              : "bottom bottom",
+          pin: true,
+          pinSpacing: false,
+        });
       });
-    });
 
-    ScrollTrigger.create({
-      snap: {
-        snapTo: (progress, self) => {
-          let panelStarts = tops.map((st) => st.start),
-            snapScroll = gsap.utils.snap(panelStarts, self.scroll());
-          return gsap.utils.normalize(
-            0,
-            ScrollTrigger.maxScroll(window),
-            snapScroll
-          );
-        },
-        duration: 0.5,
-      },
-    });
+      // Remove the snap configuration to avoid automatic scrolling
+    }, 0); // Delay to ensure all components are mounted
   }, []);
 
   return (
     <div>
-      <div className="panel app"></div>
+      <div className="scroll-panel panel app"></div>
       <Header />
       <CheckProduct />
+      <ProductList />
       <Footer />
     </div>
   );
