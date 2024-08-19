@@ -5,3 +5,14 @@
   height: 1300px;
   object-fit: cover;
 }
+.loop {
+  animation: loop 75s infinite linear 0.5s both;
+}
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -12,7 +12,7 @@ const CheckProduct = () => {
         </button>
         <div className="loopBelt absolute bottom-4 ">
           <div className="slider">
-            <ul className="flex gap-16">
+            <ul className="flex gap-16 loop">
               <li>
                 <img
                   src="/images/humor-icon.webp"
