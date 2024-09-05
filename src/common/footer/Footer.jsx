@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="pt-52 pb-11 footer md:px-20 px:8 flex flex-col relative">
+    <div className="pt-52 pb-11 footer md:px-20 px:8 flex flex-col relative px-10">
       <div className="flex justify-between items-center md:flex-row flex-col">
         <h1 className="text-8xl">News</h1>
         <div className="flex justify-center items-center product_btn ">
@@ -55,7 +55,7 @@ const Footer = () => {
         </li>
       </ul>
 
-      <div className="membership flex  justify-between mb-32 2xl:flex-row flex-col lg:px-0 px-10 ">
+      <div className="membership flex  justify-between mb-32 2xl:flex-row flex-col  ">
         <div
           className="aos-init aos-animate mb-10"
           data-aos="fade-right"

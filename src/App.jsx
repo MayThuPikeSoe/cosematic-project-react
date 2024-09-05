@@ -43,7 +43,7 @@ const App = () => {
 
   return (
     <div>
-      <div className="scroll-panel panel app box-border 2xl:bg-cover  "></div>
+      <div className="scroll-panel panel app box-border bg-cover 2xl:bg-[url('/images/image1.webp')] bg-[url('/images/fv-sp.webp')] "></div>
       <Header />
       <CheckProduct />
       <ProductList />
