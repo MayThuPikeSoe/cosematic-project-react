@@ -9,86 +9,55 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <table className="table-auto w-full mb-20 px-4">
-        <tbody>
-          <tr
-            className="sm:text-2xl text-xl font-bold border-b-[1px] border-black py-8 md:h-32 h-10  hover:opacity-55 cursor-pointer aos-animate aos-init"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="300"
-          >
-            <td className="sm:line-clamp-none line-clamp-1 md:mt-12 mt-1 pl-6 md:px-0 ">
-              銀座ロフトイベントのお知らせ
-            </td>
+      <ul className="flex flex-col w-[100%] mb-14">
+        <li className="flex justify-between border-b-[1px] border-black lg:py-10 py-5 md:mx-0 mx-9 md:text-2xl text-xl font-medium lg:flex-row flex-col">
+          <a href="#" className="pb-4 md:pb-0">
+            銀座ロフトイベントのお知らせ
+          </a>
+          <div className="date">Mar 13. 2024</div>
+        </li>
+        <li className="flex justify-between border-b-[1px] border-black lg:py-10 py-5 md:mx-0 mx-9 md:text-2xl text-xl font-medium lg:flex-row flex-col">
+          <a href="#" className="pb-4 md:pb-0">
+            能登半島地震の影響によるお荷物のお届けについて
+          </a>
+          <div className="date">Jan 05. 2024</div>
+        </li>
+        <li className="flex justify-between border-b-[1px] border-black lg:py-10 py-5 md:mx-0 mx-9 md:text-2xl text-xl font-medium lg:flex-row flex-col">
+          <a href="#" className="pb-4 md:pb-0">
+            makeumor店頭販売開始キャンペーン
+          </a>
+          <div className="date">Dec 27. 2023</div>
+        </li>
+        <li className="flex justify-between border-b-[1px] border-black lg:py-10 py-5 md:mx-0 mx-9 md:text-2xl text-xl font-medium lg:flex-row flex-col">
+          <a href="#" className="pb-4 md:pb-0">
+            【makeumor】OPEN記念ノベルTEA終了のお知らせ
+          </a>
+          <div className="date">Dec 26. 2023</div>
+        </li>
+        <li className="flex justify-between border-b-[1px] border-black lg:py-10 py-5 md:mx-0 mx-9 md:text-2xl text-xl font-medium lg:flex-row flex-col">
+          <a href="#" className="pb-4 md:pb-0">
+            年末年始休業のお知らせ
+          </a>
+          <div className="date">Dec 22. 2023</div>
+        </li>
+        <li className="flex justify-between border-b-[1px] border-black lg:py-10 py-5 md:mx-0 mx-9 md:text-2xl text-xl font-medium lg:flex-row flex-col">
+          <a href="#" className="pb-4 md:pb-0">
+            4,000円(tax in)以上購入またはsyabaan clear + churuun
+            set購入で送料無料
+          </a>
+          <div className="date w-40 md:w-64 text-start lg:text-end">Dec 18. 2023</div>
+        </li>
+        <li className="flex justify-between border-b-[1px] border-black lg:py-10 py-5 md:mx-0 mx-9 md:text-2xl text-xl font-medium lg:flex-row flex-col">
+          <a href="#" className="pb-4 md:pb-0 ">
+            昼の日中美容液「syabaan」・夜のシートマスク「churuun」12月19日（火）12:00より公式サイトにて発売
+          </a>
+          <div className="date w-40 md:w-64 text-start lg:text-end">Dec 11. 2023</div>
+        </li>
+      </ul>
 
-            <td className="text-end lg:w-96 md:w-56 w-44 pr-6 md:pr-0 ">
-              Mar 13. 2024
-            </td>
-          </tr>
-          <tr
-            className="sm:text-2xl text-xl font-bold border-b-[1px] border-black py-8 h-32 hover:opacity-55 cursor-pointer aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="400"
-          >
-            <td className="sm:line-clamp-none line-clamp-1 md:mt-12 mt-1 pl-6 md:px-0 ">能登半島地震の影響によるお荷物のお届けについて</td>
-            <td className="text-end lg:w-96 md:w-56 w-44 pr-6 md:pr-0 ">Jan 05. 2024</td>
-          </tr>
-          <tr
-            className="text-2xl font-bold border-b-[1px] border-black py-8 h-32 hover:opacity-55 cursor-pointer aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="500"
-          >
-            <td>makeumor店頭販売開始キャンペーン</td>
-            <td className="text-end ">Dec 27. 2023</td>
-          </tr>
-          <tr
-            className="text-2xl font-bold border-b-[1px] border-black py-8 h-32 hover:opacity-55 cursor-pointer aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="600"
-          >
-            <td>【makeumor】OPEN記念ノベルTEA終了のお知らせ</td>
-            <td className="text-end ">Dec 26. 2023</td>
-          </tr>
-          <tr
-            className="text-2xl font-bold border-b-[1px] border-black py-8 h-32 hover:opacity-55 cursor-pointer aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="700"
-          >
-            <td>年末年始休業のお知らせ</td>
-            <td className="text-end ">Dec 22. 2023</td>
-          </tr>
-          <tr
-            className="text-2xl font-bold border-b-[1px] border-black py-8 h-32 hover:opacity-55 cursor-pointer aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="800"
-          >
-            <td>
-              4,000円(tax in)以上購入またはsyabaan clear + churuun
-              set購入で送料無料
-            </td>
-            <td className="text-end ">Dec 18. 2023</td>
-          </tr>
-          <tr
-            className="text-2xl font-bold border-b-[1px] border-black py-8 h-32 transition  hover:opacity-55 cursor-pointer aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="900"
-          >
-            <td>
-              昼の日中美容液「syabaan」・夜のシートマスク「churuun」12月19日（火）12:00より公式サイトにて発売
-            </td>
-            <td className="text-end ">Dec 11. 2023</td>
-          </tr>
-        </tbody>
-      </table>
-      <div className="membership flex  justify-between mb-32">
+      <div className="membership flex  justify-between mb-32 2xl:flex-row flex-col lg:px-0 px-10 ">
         <div
-          className="aos-init aos-animate"
+          className="aos-init aos-animate mb-10"
           data-aos="fade-right"
           data-aos-easing="linear"
           data-aos-duration="600"
@@ -116,7 +85,7 @@ const Footer = () => {
           </p>
         </div>
         <div
-          className="flex justify-between gap-11 aos-init aos-animate"
+          className="flex justify-between gap-11 aos-init aos-animate  "
           data-aos="fade-left"
           data-aos-easing="linear"
           data-aos-duration="600"
@@ -141,7 +110,7 @@ const Footer = () => {
             <li className="hover:opacity-55 transition">LAW</li>
             <li className="hover:opacity-55 transition">Cookie Preferences</li>
           </ul>
-          <ul className=" text-xl font-medium  cursor-pointer">
+          <ul className=" text-xl font-medium  cursor-pointer lg:block hidden">
             <li className="text-4xl font-medium mb-10">SOCIAL</li>
 
             <li className="">
@@ -165,7 +134,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-end absolute bottom-0 w-[100vw] h-[19vw] -mt-36 pr-11 overflow-hidden ">
+      <div className="flex justify-end absolute bottom-0 w-[100vw] h-[19vw] -mt-36 pr-11 overflow-hidden  ">
         <img
           src="/images/subscribe-fg.webp"
           alt=""
