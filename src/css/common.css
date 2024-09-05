@@ -1,0 +1,71 @@
+.footer {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(127, 230, 244, 1) 0%,
+    rgba(185, 224, 219, 1) 33%,
+    rgba(243, 217, 194, 1) 100%
+  );
+  height: auto !important;
+}
+.footer .view_btn::before {
+  content: "";
+  position: absolute;
+  left: 2.3%;
+  top: 35%;
+  width: 290px;
+  height: 60px;
+  border-radius: 30px;
+  z-index: -1 !important;
+  transition: all 0.6s;
+}
+.footer .view_btn:hover.view_btn::before {
+  left: 9.3%;
+  top: 48%;
+  background: #000;
+}
+.all-pd_btn.view_btn {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.all-pd_btn.view_btn::before {
+  content: "";
+  position: absolute;
+  left: 3.3%;
+  top: 35%;
+  width: 360px;
+  height: 60px;
+  border-radius: 30px;
+  z-index: -1 !important;
+  transition: all 0.6s;
+}
+.all-pd_btn.view_btn:hover.all-pd_btn.view_btn::before {
+  left: 4.3%;
+  top: 48%;
+  background: #000;
+}
+/* common button hover */
+.product_btn {
+  position: relative;
+  z-index: 999 !important;
+}
+.view_btn {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.view_btn::before {
+  content: "";
+  position: absolute;
+  left: 40.3%;
+  top: 35%;
+  width: 360px;
+  height: 60px;
+  border-radius: 30px;
+  z-index: -1 !important;
+  transition: all 0.6s;
+}
+.view_btn:hover.view_btn::before {
+  left: 42.3%;
+  top: 48%;
+  background: #000;
+}

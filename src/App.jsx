@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import Header from "./common/header/Header";
 import Footer from "./common/footer/Footer";
 import "./App.css";
+import "./css/common.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 
@@ -8,11 +10,17 @@ import "./js/app.js";
 import CheckProduct from "./components/CheckProduct";
 import { useEffect } from "react";
 import ProductList from "./components/ProductList.jsx";
-
+import About from "./components/About.jsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import ProductCard from "./components/ProductCard.jsx";
 const App = () => {
   useEffect(() => {
+    AOS.init();
+  }, []);
+
+  useEffect(() => {
     setTimeout(() => {
-      // Select only panels with the class "scroll-panel"
       let panels = gsap.utils.toArray(".scroll-panel");
 
       let tops = panels.map((panel) =>
@@ -30,17 +38,17 @@ const App = () => {
           pinSpacing: false,
         });
       });
-
-      // Remove the snap configuration to avoid automatic scrolling
-    }, 0); // Delay to ensure all components are mounted
+    }, 0);
   }, []);
 
   return (
     <div>
-      <div className="scroll-panel panel app"></div>
+      <div className="scroll-panel panel app box-border 2xl:bg-cover  "></div>
       <Header />
       <CheckProduct />
       <ProductList />
+      <About />
+      <ProductCard />
       <Footer />
     </div>
   );

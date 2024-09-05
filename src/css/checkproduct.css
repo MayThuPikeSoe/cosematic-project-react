@@ -5,7 +5,12 @@
   object-fit: cover;
 }
 .loop {
-  animation: loop 95s infinite;
+  animation: loop 95s infinite linear 0.5s both;
+  padding-bottom: 30px;
+}
+.loop li {
+  width: 200px;
+  height: 20px;
 }
 @keyframes loop {
   0% {
@@ -15,3 +20,4 @@
     transform: translateX(-100%);
   }
 }
+

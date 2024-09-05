@@ -1,0 +1,54 @@
+.product {
+  background: linear-gradient(
+    0deg,
+    rgba(126, 244, 226, 1) 0%,
+    rgba(254, 162, 162, 1) 100%
+  );
+}
+.button_hover {
+  z-index: 999 !important;
+}
+.arrow_btn {
+  background: #ffffff;
+  border-radius: 50%;
+  overflow: hidden !important;
+}
+.arrow_btn::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ccbdb4;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.button_hover:hover .arrow_btn::before {
+  top: 0;
+  opacity: 1;
+  overflow: hidden !important;
+  visibility: visible;
+}
+.icon {
+  position: relative;
+  transition: 0.5s;
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.button_hover:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+.img {
+  transition: 0.5s;
+  transform: scale(1);
+}
+.button_hover:hover .img {
+  transform: scale(1.2);
+}
+
