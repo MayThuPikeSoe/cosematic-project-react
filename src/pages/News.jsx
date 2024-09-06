@@ -1,4 +1,4 @@
-const Footer = () => {
+const News = () => {
   return (
     <div className="sm:pt-52 pt-28 pb-11 footer md:px-20 px:8 flex flex-col relative px-8">
       <div className="flex justify-between items-center md:flex-row flex-col">
@@ -178,4 +178,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default News;

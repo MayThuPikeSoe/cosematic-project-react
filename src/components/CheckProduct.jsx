@@ -7,9 +7,9 @@ const CheckProduct = () => {
           Make Humor <br />
           Make You More
         </h1>
-        <button className="bg-white px-16 py-5 border border-black rounded-full mt-40 text-xl">
+        <a className="bg-white px-16 py-5 border border-black rounded-full mt-40 text-xl">
           Check the product
-        </button>
+        </a>
         <div className="loopBelt absolute bottom-4 ">
           <div className="slider flex gap-10 justify-center">
             <ul className="flex gap-10 loop">

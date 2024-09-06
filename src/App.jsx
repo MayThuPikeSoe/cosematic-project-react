@@ -1,19 +1,21 @@
 /* eslint-disable no-unused-vars */
 import Header from "./common/header/Header";
-import Footer from "./common/footer/Footer";
 import "./App.css";
 import "./css/common.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-
 import "./js/app.js";
-import CheckProduct from "./components/CheckProduct";
 import { useEffect } from "react";
-import ProductList from "./components/ProductList.jsx";
 import About from "./components/About.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ProductCard from "./components/ProductCard.jsx";
+import "./js/app.js";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home.jsx";
+import ProductItem from "./pages/ProductItem.jsx";
+import ProductCards from "./pages/ProductCards.jsx";
+import News from "./pages/News.jsx";
+import Footer from "./common/footer/Footer.jsx";
 const App = () => {
   useEffect(() => {
     AOS.init();
@@ -43,13 +45,20 @@ const App = () => {
 
   return (
     <div>
-      <div className="scroll-panel panel app box-border bg-cover 2xl:bg-[url('/images/image1.webp')] bg-[url('/images/fv-sp.webp')] "></div>
-      <Header />
-      <CheckProduct />
-      <ProductList />
-      <About />
-      <ProductCard />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/login" />
+          <Route path="/news" element={<News />}></Route>
+          <Route path="/product" element={<ProductCards />}>
+            <Route path=":productId" element={<ProductItem />} />
+          </Route>
+        </Routes>
       <Footer />
+
+      </BrowserRouter>
     </div>
   );
 };

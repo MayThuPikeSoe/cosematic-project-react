@@ -1,8 +1,8 @@
 import "../css/about.css";
 const About = () => {
   return (
-    <div>
-      <section className="about md:h-[947px] h-auto flex-col items-center justify-around lg:flex-row flex py-10">
+    <div >
+      <section className="about md:h-[947px] h-auto flex-col items-center justify-around lg:flex-row flex py-10 px-8">
         <div
           className="img_about relative lg:w-[550px] lg:h-[700px] w-[450px] h-[500px] aos-init aos-animate  "
           data-aos="fade-right"
@@ -15,7 +15,7 @@ const About = () => {
             className=" border border-black w-full h-full "
           />
         </div>
-        <div className="aos-init aos-animate w-[450px] ">
+        <div className="aos-init aos-animate md:w-[450px] w-auto">
           <h1
             className=" text-6xl font-medium mb-12 aos-init aos-animate "
             data-aos="fade-left"
@@ -45,7 +45,7 @@ const About = () => {
             data-aos-duration="400"
             data-aos-easing="ease-in-sine"
           >
-            <button className="more_btn border h-[71px] w-[237px]  my-5">
+            <button className="more_btn border sm:h-[71px] w-[237px] h-[50px]  my-5">
               <span>Read More</span>
             </button>
           </div>

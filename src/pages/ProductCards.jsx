@@ -1,5 +1,5 @@
-import "../css/product.css";
-const ProductCard = () => {
+
+const ProductCards = () => {
   return (
     <div>
       <section className="product h-auto py-24 px-9">
@@ -11,7 +11,7 @@ const ProductCard = () => {
         </h1>
         <ul className="grid xl:grid-cols-4 sm:grid-cols-2  grid-cols-1 justify-center items-center gap-5 my-10 ">
           <li
-            className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] button_hover justify-center flex flex-col items-center aos-init aos-animate"
+            className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]  justify-center flex flex-col items-center aos-init aos-animate"
             data-aos="fade-up"
             data-aos-duration="600"
           >
@@ -40,7 +40,7 @@ const ProductCard = () => {
           </li>
           {/*card2  */}
           <li
-            className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] button_hover justify-center flex flex-col items-center aos-init aos-animate"
+            className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]  justify-center flex flex-col items-center aos-init aos-animate"
             data-aos="fade-up"
             data-aos-duration="600"
           >
@@ -69,7 +69,7 @@ const ProductCard = () => {
           </li>
           {/*card3 */}
           <li
-            className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] button_hover justify-center flex flex-col items-center aos-init aos-animate"
+            className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]  justify-center flex flex-col items-center aos-init aos-animate"
             data-aos="fade-up"
             data-aos-duration="600"
           >
@@ -98,7 +98,7 @@ const ProductCard = () => {
           </li>
           {/*card4 */}
           <li
-            className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] button_hover justify-center flex flex-col items-center aos-init aos-animate"
+            className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]  justify-center flex flex-col items-center aos-init aos-animate"
             data-aos="fade-up"
             data-aos-duration="600"
           >
@@ -138,7 +138,7 @@ const ProductCard = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default ProductCard;
+export default ProductCards
