@@ -1,0 +1,91 @@
+.product_menu {
+  display: none;
+}
+.product_menu.open {
+  display: block;
+}
+.product_menu.open1 {
+  display: block;
+}
+.btn {
+  position: relative;
+}
+.btn::after {
+  position: absolute;
+  content: "";
+  top: 20%;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background: rgb(66, 65, 65);
+}
+.btn::before {
+  position: absolute;
+  content: "";
+  top: 20%;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  transform: rotate(90deg);
+  background: rgb(66, 65, 65);
+  transition: 0.6s;
+}
+.btn.open::before {
+  transform: rotate(0deg);
+}
+
+.btn1 {
+  position: relative;
+}
+.btn1::after {
+  position: absolute;
+  content: "";
+  top: 20%;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background: rgb(66, 65, 65);
+}
+.btn1::before {
+  position: absolute;
+  content: "";
+  top: 20%;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  transform: rotate(90deg);
+  background: rgb(66, 65, 65);
+  transition: 0.6s;
+}
+.btn1.open1::before {
+  transform: rotate(0deg);
+}
+.add_btn {
+  cursor: pointer;
+}
+.add_btn:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 27.9%;
+  background: #000;
+  width: 384px;
+  height: 56px;
+  border-radius: 20px;
+  z-index: -1;
+  transition: 0.6s;
+}
+.add_btn:hover.add_btn:before {
+  top: 25%;
+  left: 30%;
+}
+.img_bg:before {
+  position: absolute;
+  content: "";
+  background: url(/images/img-bg.png) no-repeat;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  left: 1%;
+}

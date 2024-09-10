@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../css/productlist.css";
 
 const ProductList = () => {
@@ -19,12 +20,14 @@ const ProductList = () => {
             <h2 className="sm:text-3xl text-xl">syabaan clear</h2>
             <p className="sm:text-xl text-sm">日中美容液 シャバーン クリア</p>
           </div>
-
-          <button className="check_btn h-[71px] 2xl:w-[237px] lg:w-[170px] border w-[71px] sm:rounded-[50px] rounded-full relative my-5 ">
-            <span>Check</span>
-          </button>
+          <Link to='/product_item'>
+            <button className="check_btn h-[71px] 2xl:w-[237px] lg:w-[170px] border w-[71px] sm:rounded-[50px] rounded-full relative my-5 ">
+              <span>Check</span>
+            </button>
+          </Link>
         </div>
-      </div><div className="h-auto w-[100%] img_box1 ">
+      </div>
+      <div className="h-auto w-[100%] img_box1 ">
         <img
           src="/images/man-fg02.webp"
           alt=""
@@ -45,7 +48,8 @@ const ProductList = () => {
             <span>Check</span>
           </button>
         </div>
-      </div><div className="h-auto w-[100%] img_box1 ">
+      </div>
+      <div className="h-auto w-[100%] img_box1 ">
         <img
           src="/images/man-fg03.webp"
           alt=""
@@ -66,7 +70,8 @@ const ProductList = () => {
             <span>Check</span>
           </button>
         </div>
-      </div><div className="h-auto w-[100%] img_box1 ">
+      </div>
+      <div className="h-auto w-[100%] img_box1 ">
         <img
           src="/images/man-fg04.webp"
           alt=""
@@ -88,7 +93,6 @@ const ProductList = () => {
           </button>
         </div>
       </div>
-     
     </div>
   );
 };

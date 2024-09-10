@@ -16,6 +16,7 @@ import ProductItem from "./pages/ProductItem.jsx";
 import ProductCards from "./pages/ProductCards.jsx";
 import News from "./pages/News.jsx";
 import Footer from "./common/footer/Footer.jsx";
+import CheckProductList from "./pages/CheckProductList.jsx";
 const App = () => {
   useEffect(() => {
     AOS.init();
@@ -52,12 +53,13 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/login" />
           <Route path="/news" element={<News />}></Route>
-          <Route path="/product" element={<ProductCards />}>
-            <Route path=":productId" element={<ProductItem />} />
+          <Route path="/product_item" element={<ProductItem />}></Route>
+          <Route path="/check-product" element={<CheckProductList />}></Route>
+          <Route path="/product-detail" element={<ProductCards />}>
+            <Route path=":productId" />
           </Route>
         </Routes>
-      <Footer />
-
+        <Footer />
       </BrowserRouter>
     </div>
   );

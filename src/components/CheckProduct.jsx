@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../css/checkproduct.css";
 const CheckProduct = () => {
   return (
@@ -7,9 +8,9 @@ const CheckProduct = () => {
           Make Humor <br />
           Make You More
         </h1>
-        <a className="bg-white px-16 py-5 border border-black rounded-full mt-40 text-xl">
+        <Link to="/check-product" className="bg-white px-16 py-5 border border-black rounded-full mt-40 text-xl cursor-pointer">
           Check the product
-        </a>
+        </Link>
         <div className="loopBelt absolute bottom-4 ">
           <div className="slider flex gap-10 justify-center">
             <ul className="flex gap-10 loop">
