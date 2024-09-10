@@ -89,3 +89,14 @@
   height: 100%;
   left: 1%;
 }
+.img_bg1:before {
+    position: absolute;
+    content: "";
+    background: url(/images/item2.png) no-repeat;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    right: 0;
+    left: 35%;
+  }
