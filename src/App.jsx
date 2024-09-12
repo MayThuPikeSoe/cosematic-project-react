@@ -24,6 +24,7 @@ import ProductDetail from "./pages/ProductDetail.jsx";
 import ProductList from "./components/ProductList.jsx";
 import ProductItem1 from "./pages/ProductItem1.jsx";
 import ProductItem2 from "./pages/ProductItem2.jsx";
+import Login from "./pages/Login.jsx";
 const App = () => {
   useEffect(() => {
     AOS.init();
@@ -63,6 +64,7 @@ const App = () => {
           <Route path="/product_item" element={<ProductItem />}></Route>
           <Route path="/product_item1" element={<ProductItem1 />}></Route>
           <Route path="/product_item2" element={<ProductItem2 />}></Route>
+          <Route path="/login" element={<Login/>}></Route>
 
           <Route path="/check-product" element={<CheckProductList />}></Route>
           <Route

@@ -24,7 +24,7 @@ const Header = () => {
     // ScrollTrigger instance
     const scrollTrigger = ScrollTrigger.create({
       start: "top top", // Adjust start value as necessary
-    
+
       onUpdate: (self) => {
         if (self.direction === -1) {
           showAnim.play();
@@ -72,7 +72,9 @@ const Header = () => {
         <img src="/images/logo.svg" alt="" />
       </Link>
       <div className="button_gp ">
-        <button className="px-4 py-2 border"> Sign up/Login</button>
+        <Link to="/login">
+          <button className="px-4 py-2 border"> Sign up/Login</button>
+        </Link>
         <button className="px-4 py-2 border  transition hover:text-white">
           Cart
         </button>

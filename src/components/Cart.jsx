@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
-import productDetail from "../js/productDetail";
+// import productDetail from "../js/productDetail";
 const Cart = ({ currentProduct }) => {
   const [count, setcount] = useState(1);
   const [isVisible, setIsVisible] = useState(true);
