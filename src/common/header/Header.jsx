@@ -1,14 +1,46 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "/src/css/header.css";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 const Header = () => {
   const [menu, setMenu] = useState(false);
   function menuToggle() {
     setMenu(!menu);
     console.log(menu);
   }
+
+  useEffect(() => {
+    // Animation instance
+    const showAnim = gsap
+      .from(".header", {
+        yPercent: -100,
+        paused: true,
+        duration: 0.2,
+      })
+      .progress(1);
+
+    // ScrollTrigger instance
+    const scrollTrigger = ScrollTrigger.create({
+      start: "top top", // Adjust start value as necessary
+    
+      onUpdate: (self) => {
+        if (self.direction === -1) {
+          showAnim.play();
+        } else {
+          showAnim.reverse();
+        }
+      },
+    });
+
+    // Cleanup on unmount
+    return () => {
+      scrollTrigger.kill();
+    };
+  }, []);
   return (
-    <div className="flex justify-between p-5 border border-b-2 fixed panel w-screen top-0 z-50 header">
+    <div className="flex justify-between p-5 border border-b-2 panel w-screen top-0 z-50 header">
       <div
         className={`hamburger mt-4 ${menu ? "open" : ""}`}
         onClick={menuToggle}

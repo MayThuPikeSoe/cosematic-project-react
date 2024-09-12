@@ -40,7 +40,7 @@ const About = () => {
             嬉し、恥ずかし、美し！！
           </p>
           <div
-            className="btn relative lg:my-14 aos-init aos-animate my-3"
+            className="read_btn relative lg:my-14 aos-init aos-animate my-3"
             data-aos="fade-left"
             data-aos-duration="400"
             data-aos-easing="ease-in-sine"

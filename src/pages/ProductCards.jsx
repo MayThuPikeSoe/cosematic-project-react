@@ -1,5 +1,6 @@
 
 const ProductCards = () => {
+  
   return (
     <div>
       <section className="product h-auto py-24 px-9">

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "../css/productItem.css";
 import { Link } from "react-router-dom";
-// import productDetail from "../js/productDetail.js";
-const ProductItem = () => {
+import productDetail from "../js/productDetail.js";
+const ProductItem2 = () => {
   // setOrder => context api
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
@@ -21,11 +21,10 @@ const ProductItem = () => {
       <div className="flex">
         <div className="w-[50%]">
           <img
-            src="/images/item1.jpg"
+            src="/images/item-fg04.webp"
             alt=""
             className="aos-init aos-animate add-img"
             data-aos="flip-left"
-            id="add"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000"
           />
@@ -65,7 +64,7 @@ const ProductItem = () => {
             </ul>
           </div>
 
-          <Link to={`/product-detail/${1}`}>
+          <Link to={`/product-detail/${productDetail.id}`}>
             <div className="flex justify-center mt-14 relative z-40 w-full h-20">
               <button className="add_btn w-full h-full border-black bg-white rounded-full font-bold">
                 Add To Cart
@@ -394,4 +393,4 @@ const ProductItem = () => {
   );
 };
 
-export default ProductItem;
+export default ProductItem2;

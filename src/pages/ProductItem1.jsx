@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "../css/productItem.css";
 import { Link } from "react-router-dom";
-// import productDetail from "../js/productDetail.js";
-const ProductItem = () => {
+import productDetail from "../js/productDetail.js";
+const ProductItem1 = () => {
   // setOrder => context api
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
@@ -19,13 +19,12 @@ const ProductItem = () => {
   return (
     <div>
       <div className="flex">
-        <div className="w-[50%]">
+        <div className="w-[50%] bg-gradient-to-br from-[#dccaf0] to-[#70d8eb]">
           <img
-            src="/images/item1.jpg"
+            src="/images/item-fg04.webp"
             alt=""
             className="aos-init aos-animate add-img"
             data-aos="flip-left"
-            id="add"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000"
           />
@@ -65,7 +64,7 @@ const ProductItem = () => {
             </ul>
           </div>
 
-          <Link to={`/product-detail/${1}`}>
+          <Link to={`/product-detail/${"4"}`}>
             <div className="flex justify-center mt-14 relative z-40 w-full h-20">
               <button className="add_btn w-full h-full border-black bg-white rounded-full font-bold">
                 Add To Cart
@@ -74,7 +73,7 @@ const ProductItem = () => {
           </Link>
         </div>
       </div>
-      <div className=" h-[1100px]  bg-gradient-to-br from-[#dccaf0] to-[#70d8eb] overflow-hidden img_bg relative flex flex-col justify-center items-center z-50">
+      <div className=" h-[1100px]  bg-gradient-to-br from-[#dccaf0] to-[#70d8eb] overflow-hidden img_bg2 relative flex flex-col justify-center items-center z-50">
         <h1
           className="border-black text-5xl font-medium bg-transparent w-[600px] h-[130px] border rounded-[50%] text-center items-center flex justify-center text-gray-700 aos-init aos-animate"
           data-aos="flip-left"
@@ -84,7 +83,7 @@ const ProductItem = () => {
           Moisturizing
         </h1>
         <p
-          className="text-xl text-center mt-6 aos-init aos-animate "
+          className="text-xl text-center mt-6 aos-init aos-animate"
           data-aos="fade-up"
           data-aos-duration="3000"
         >
@@ -110,7 +109,7 @@ const ProductItem = () => {
           </div>
         </div>
       </div>
-      <div className=" h-[1100px] pl-20 bg-gradient-to-br from-[#dccaf0] to-[#70d8eb] overflow-hidden img_bg1 relative flex flex-col justify-center items-center z-50">
+      <div className=" h-[1100px] pl-20 bg-gradient-to-br from-[#dccaf0] to-[#70d8eb] overflow-hidden img_bg3 relative flex flex-col justify-center items-center z-50">
         <h1
           className="border-black text-5xl font-medium bg-transparent w-[600px] h-[130px] border rounded-[50%] text-center items-center flex justify-center text-gray-700 aos-init aos-animate"
           data-aos="flip-left"
@@ -120,7 +119,7 @@ const ProductItem = () => {
           Moisturizing
         </h1>
         <p
-          className="text-xl text-center mt-6 aos-init aos-animate"
+          className="text-xl text-center mt-6 aos-init aos-animate  text-white"
           data-aos="fade-up"
           data-aos-duration="3000"
         >
@@ -394,4 +393,4 @@ const ProductItem = () => {
   );
 };
 
-export default ProductItem;
+export default ProductItem1;
