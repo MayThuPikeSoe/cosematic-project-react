@@ -82,14 +82,12 @@ export default function Cart() {
     addToCart,
     removeFromCart,
     clearCart,
-    getCartTotal,
-    setCartItems,
+    
   } = useContext(CartContext);
-  const [cart, setCart] = useState("");
   console.log("cartitems", cartItems);
   // const [count, setcount] = useState(1);
 
-  const [isVisible, setIsVisible] = useState(true);
+  // const [isVisible, setIsVisible] = useState(true);
 
   // const increment = () => {
   //   setcount(count + 1);
@@ -102,7 +100,6 @@ export default function Cart() {
   //     setcount(count - 1);
   // //   }
   // };
-  console.log(cart);
 
   // const deleteRow = () => {
   //   setCart(cart)
@@ -114,7 +111,9 @@ export default function Cart() {
       <div className="flex flex-col gap-4 ">
         {cartItems.map((item) => (
           <div
-            className="flex mb-5  w-full border-b-2 p-4 items-center content"
+            className="flex mb-5  w-full border-b-2 p-4 items-center content aos-animate aos-init"
+            data-aos="fade-up"
+            data-aos-duration="500"
             key={item.id}
           >
             <div className="flex gap-4">
@@ -161,7 +160,7 @@ export default function Cart() {
                 <button
                   className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
                   onClick={() => {
-                  clearCart(item)
+                    clearCart(item);
                   }}
                 >
                   Clear cart

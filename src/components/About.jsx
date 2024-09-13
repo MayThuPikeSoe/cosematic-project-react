@@ -10,7 +10,7 @@ const About = () => {
           data-aos-easing="ease-in-sine"
         >
           <img
-            src="/images/about-fg.webp"
+            src="/src/images/about-fg.webp"
             alt=""
             className=" border border-black w-full h-full "
           />

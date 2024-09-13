@@ -70,7 +70,7 @@ const Header = () => {
         </nav>
       </div>
       <Link to="/">
-        <img src="/images/logo.svg" alt="" className="sm:w-auto sm:h-auto w-32 h-20"/>
+        <img src="/src/images/logo.svg" alt="" className="sm:w-auto sm:h-auto w-32 h-20"/>
       </Link>
       <div className="button_gp sm:text-center text-left">
         <Link to="/login">

@@ -8,29 +8,32 @@ const CheckProduct = () => {
           Make Humor <br />
           Make You More
         </h1>
-        <Link to="/check-product" className="bg-white px-16 py-5 border border-black rounded-full mt-40 text-xl cursor-pointer">
+        <Link
+          to="/check-product"
+          className="bg-white px-16 py-5 border border-black rounded-full mt-40 text-xl cursor-pointer"
+        >
           Check the product
         </Link>
         <div className="loopBelt absolute bottom-4 ">
           <div className="slider flex gap-10 justify-center">
             <ul className="flex gap-10 loop">
               <li>
-                <img src="/images/humor-icon.webp" alt="" className="" />
+                <img src="/src/images/humor-icon.webp" alt="" className="" />
               </li>{" "}
               <li>
-                <img src="/images/humor-icon.webp" alt="" className="" />
+                <img src="/src/images/humor-icon.webp" alt="" className="" />
               </li>
               <li>
-                <img src="/images/humor-icon.webp" alt="" className="" />
+                <img src="/src/images/humor-icon.webp" alt="" className="" />
               </li>
               <li>
-                <img src="/images/humor-icon.webp" alt="" className="" />
+                <img src="/src/images/humor-icon.webp" alt="" className="" />
               </li>
               <li>
-                <img src="/images/humor-icon.webp" alt="" className="" />
+                <img src="/src/images/humor-icon.webp" alt="" className="" />
               </li>
               <li>
-                <img src="/images/humor-icon.webp" alt="" className="" />
+                <img src="/src/images/humor-icon.webp" alt="" className="" />
               </li>
             </ul>
             <ul className="flex gap-10 loop">

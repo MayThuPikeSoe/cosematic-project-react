@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <div className="sm:pt-52 pt-28 pb-11 footer md:px-20 px:8 flex flex-col relative px-8">
@@ -111,13 +110,12 @@ const Footer = () => {
       </div>
       <div className="flex justify-end absolute bottom-0 w-[100vw] h-[19vw] -mt-36 pr-11 overflow-hidden  ">
         <img
-          src="/images/subscribe-fg.webp"
+          src="/src/images/subscribe-fg.webp"
           alt=""
           className=" object-cover sm:h-[39vw] sm:w-[17vw] h-[45vw] w-[20vw] overflow-hidden"
         />
       </div>
       <p className="mt-auto sm:text-4xl text-2xl">©makeumor</p>
-    
     </div>
   );
 };
