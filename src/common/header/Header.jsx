@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import "/src/css/header.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import gsap from "gsap";
+import productDetail from "../../js/productDetail";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 const Header = () => {
@@ -10,7 +11,7 @@ const Header = () => {
     setMenu(!menu);
     console.log(menu);
   }
-
+  const { id } = useParams();
   useEffect(() => {
     // Animation instance
     const showAnim = gsap
@@ -75,9 +76,12 @@ const Header = () => {
         <Link to="/login">
           <button className="px-4 py-2 border"> Sign up/Login</button>
         </Link>
-        <button className="px-4 py-2 border  transition hover:text-white">
-          Cart
-        </button>
+
+        <Link to={`/cart/${productDetail.id}`}>
+          <button className="px-4 py-2 border  transition hover:text-white">
+            Cart
+          </button>
+        </Link>
       </div>
     </div>
   );

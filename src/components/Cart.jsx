@@ -157,7 +157,7 @@ export default function Cart() {
               </div> */}
 
             {cartItems ? (
-              <div className="flex flex-col justify-between items-center">
+              <div className="flex flex-col justify-between items-center ml-8">
                 <button
                   className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
                   onClick={() => {
