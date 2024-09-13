@@ -1,6 +1,9 @@
-
 const ProductCards = () => {
-  
+  const productCard = [
+    { id: 1, image: "/images/item-fg01.webp" },
+    { id: 2, image: "/images/item-fg02.webp" },
+    { id: 3, image: "/images/item-fg03.webp" },
+  ];
   return (
     <div>
       <section className="product h-auto py-24 px-9">
@@ -11,36 +14,35 @@ const ProductCards = () => {
           Products
         </h1>
         <ul className="grid xl:grid-cols-4 sm:grid-cols-2  grid-cols-1 justify-center items-center gap-5 my-10 ">
-          <li
-            className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]  justify-center flex flex-col items-center aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-duration="600"
-          >
-            <a
-              href=""
-              className="h-[560px] flex flex-col py-10 w-full items-center"
+          {productCard.map((card) => {
+            <li
+              className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]  justify-center flex flex-col items-center aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="600"
             >
-              <img
-                src="/images/item-fg01.webp"
-                alt=""
-                className="w-[300px]  img"
-              />
-              <div className="mt-auto text-xl text-[#555353] px-5 w-full ">
-                <h3>syabaan clear</h3>
-                <p className="mb-5">日中美容液 シャバーン クリア</p>
-                <div className="flex justify-between h-auto w-{100%]  ">
-                  <p className="flex justify-center items-center font-bold text-2xl">
-                    ¥2,420 <small>Tax in</small>
-                  </p>
-                  <button className="arrow_btn h-[70px] w-[70px] border relative ">
-                    <i className="fa-solid fa-arrow-right icon text-2xl"></i>
-                  </button>
+              <a
+                href=""
+                className="h-[560px] flex flex-col py-10 w-full items-center"
+              >
+                <img src={card.image} alt="" className="w-[300px]  img" />
+                <div className="mt-auto text-xl text-[#555353] px-5 w-full ">
+                  <h3>syabaan clear</h3>
+                  <p className="mb-5">日中美容液 シャバーン クリア</p>
+                  <div className="flex justify-between h-auto w-{100%]  ">
+                    <p className="flex justify-center items-center font-bold text-2xl">
+                      ¥2,420 <small>Tax in</small>
+                    </p>
+                    <button className="arrow_btn h-[70px] w-[70px] border relative ">
+                      <i className="fa-solid fa-arrow-right icon text-2xl"></i>
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
+              </a>
+            </li>;
+          })}
+
           {/*card2  */}
-          <li
+          {/* <li
             className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]  justify-center flex flex-col items-center aos-init aos-animate"
             data-aos="fade-up"
             data-aos-duration="600"
@@ -67,9 +69,9 @@ const ProductCards = () => {
                 </div>
               </div>
             </a>
-          </li>
+          </li> */}
           {/*card3 */}
-          <li
+          {/* <li
             className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]  justify-center flex flex-col items-center aos-init aos-animate"
             data-aos="fade-up"
             data-aos-duration="600"
@@ -96,9 +98,9 @@ const ProductCards = () => {
                 </div>
               </div>
             </a>
-          </li>
+          </li> */}
           {/*card4 */}
-          <li
+          {/* <li
             className="rounded-lg  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]  justify-center flex flex-col items-center aos-init aos-animate"
             data-aos="fade-up"
             data-aos-duration="600"
@@ -125,7 +127,7 @@ const ProductCards = () => {
                 </div>
               </div>
             </a>
-          </li>
+          </li> */}
         </ul>
         <div
           className="flex justify-center items-center product_btn aos-animate aos-init  "
@@ -139,7 +141,7 @@ const ProductCards = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default ProductCards
+export default ProductCards;

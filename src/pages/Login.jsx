@@ -1,7 +1,7 @@
 const Login = () => {
   return (
-    <div className="bg-black h-[600px] w-full ">
-      <section className="mt-10 mb-9 h-[600px] w-[800px] flex flex-col bg-black text-white p-4">
+    <div className=" h-auto w-full mt-32  flex justify-center items-center">
+      <section className="mt-10 mb-9 h-auto w-[400px] flex flex-col text-white bg-gray-400 py-20 px-10">
         <h3 className="text-3xl mb-4">ログイン</h3>
         <div className="mb-4">
           <label htmlFor="email" className="block mb-2">

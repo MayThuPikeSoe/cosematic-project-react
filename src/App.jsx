@@ -22,8 +22,6 @@ import NewsComponent from "./components/NewsComponent.jsx";
 import BottomScrollbar from "./components/BottomScrollbar.jsx";
 import ProductDetail from "./pages/ProductDetail.jsx";
 import ProductList from "./components/ProductList.jsx";
-import ProductItem1 from "./pages/ProductItem1.jsx";
-import ProductItem2 from "./pages/ProductItem2.jsx";
 import Login from "./pages/Login.jsx";
 import Cart from "./components/Cart.jsx";
 const App = () => {
@@ -60,12 +58,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/login" />
           <Route path="/news" element={<News />}></Route>
-          {/* <Route path="/product_item" element={<ProductItem />}></Route> */}
           <Route path="/product_item/:id" element={<ProductItem />}></Route>
-          {/* <Route path="/product_item1" element={<ProductItem1 />}></Route>
-          <Route path="/product_item2" element={<ProductItem2 />}></Route> */}
+
           <Route path="/login" element={<Login />}></Route>
 
           <Route path="/check-product" element={<CheckProductList />}></Route>
@@ -73,10 +68,7 @@ const App = () => {
             path="/product-detail/:productId"
             element={<ProductDetail />}
           />
-          <Route
-            path="/cart/:productId"
-            element={<Cart />}
-          />
+          <Route path="/cart/:productId" element={<Cart />} />
           <Route path="/" element={<ProductList />} />
           <Route path="/news-component" element={<NewsComponent />}></Route>
         </Routes>

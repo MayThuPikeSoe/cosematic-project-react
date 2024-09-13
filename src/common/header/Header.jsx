@@ -51,7 +51,7 @@ const Header = () => {
         <nav className={`menu ${menu ? "open" : ""}`}>
           <ul>
             <li>
-              <Link to="/product" className="text-8xl">
+              <Link to="/check-product" className="text-8xl">
                 Products
               </Link>
             </li>
