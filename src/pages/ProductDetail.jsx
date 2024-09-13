@@ -62,7 +62,7 @@ const ProductDetail = () => {
   console.log(productId);
 
   const currentProduct = productDetail.find(
-    (product) => product.id === parseInt(productId)
+    (product) => product.id == productId
   );
   console.log(productDetail);
 

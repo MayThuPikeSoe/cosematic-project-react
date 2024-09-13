@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import "../css/productlist.css";
-// import products from "../js/app.js";
-import productDetail from "../js/productDetail";
+import products from "../js/app.js";
+// import productDetail from "../js/productDetail";
 const ProductList = () => {
   return (
     <div className="grid md:grid-cols-2 grid-cols-1 w-full">
-      {/* {products.map((product) => (
-        <Link to={`/product_item/${product.id}`} key={product.id} id={product.id}>
+      {products.map((product) => (
+        <Link
+          to={`/product_item/${product.id}`}
+          key={product.id}
+          id={product.id}
+        >
           <div className="h-auto w-[100%] img_box1 ">
             <img
               src={product.image}
@@ -32,8 +36,8 @@ const ProductList = () => {
             </div>
           </div>
         </Link>
-      ))} */}
-      <Link to="/product_item">
+      ))}
+      {/* <Link to="/product_item">
         <div className="h-auto w-[100%] img_box1 ">
           <img
             src="/images/man-fg01.webp"
@@ -129,7 +133,7 @@ const ProductList = () => {
             </button>
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
