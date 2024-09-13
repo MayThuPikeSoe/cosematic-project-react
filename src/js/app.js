@@ -1,19 +1,23 @@
 const products = [
   {
     id: 1,
-    image: "/src/images/man-fg01.webp",
+    image:
+      "https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/man-fg01.webp",
   },
   {
     id: 2,
-    image: "/src/images/man-fg02.webp",
+    image:
+      "https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/man-fg02.webp",
   },
   {
     id: 3,
-    image: "/src/images/man-fg03.webp",
+    image:
+      "https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/man-fg03.webp",
   },
   {
     id: 4,
-    image: "/src/images/man-fg04.webp",
+    image:
+      "https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/man-fg04.webp",
   },
 ];
 
