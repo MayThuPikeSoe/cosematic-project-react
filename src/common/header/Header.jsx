@@ -41,9 +41,9 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className="flex justify-between p-5 border border-b-2 panel w-screen top-0 z-50 header">
+    <div className="flex justify-between w-full p-5 border border-b-2 panel w-screen top-0 z-50 header">
       <div
-        className={`hamburger mt-4 ${menu ? "open" : ""}`}
+        className={`hamburger mt-10 ${menu ? "open" : ""}`}
         onClick={menuToggle}
       >
         <div className="line1"></div>
@@ -70,15 +70,15 @@ const Header = () => {
         </nav>
       </div>
       <Link to="/">
-        <img src="/images/logo.svg" alt="" />
+        <img src="/images/logo.svg" alt="" className="sm:w-auto sm:h-auto w-32 h-20"/>
       </Link>
-      <div className="button_gp ">
+      <div className="button_gp sm:text-center text-left">
         <Link to="/login">
-          <button className="px-4 py-2 border"> Sign up/Login</button>
+          <button className="sm:px-4 py-2 border px-2 sm:text-2xl text-sm"> Sign up/Login</button>
         </Link>
 
         <Link to={`/cart/${productDetail.id}`}>
-          <button className="px-4 py-2 border  transition hover:text-white">
+          <button className="sm:px-4 px-0 py-2 border sm:text-2xl text-sm transition hover:text-white">
             Cart
           </button>
         </Link>

@@ -110,11 +110,11 @@ export default function Cart() {
   // };
 
   return (
-    <div className=" w-full h-auto flex justify-center items-center mt-[100px] p-20">
+    <div className=" w-full h-auto flex justify-center items-center mt-[100px] ">
       <div className="flex flex-col gap-4 ">
         {cartItems.map((item) => (
           <div
-            className="flex mb-5 mx-10  border-b-2 p-4 items-center content"
+            className="flex mb-5  w-full border-b-2 p-4 items-center content"
             key={item.id}
           >
             <div className="flex gap-4">
