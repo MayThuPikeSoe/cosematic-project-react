@@ -1,5 +1,5 @@
 import "../css/productItem.css";
-import { useContext,  useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import productDetail from "../js/productDetail.js";
 import { CartContext } from "./AddToCart.jsx";
@@ -25,18 +25,18 @@ const ProductItem = () => {
         .map((product) => (
           <div key={product.id} id={product.id}>
             <div>
-              <div className="flex">
-                <div className="w-[50%] bg-gradient-to-br from-[#dccaf0] to-[#70d8eb]">
+              <div className="flex pb-20 pt-32 bg-gradient-to-br from-[#dccaf0] to-[#70d8eb] 2xl:flex-row flex-col">
+                <div className="2xl:w-[50%] w-full justify-center items-center flex">
                   <img
                     src={product.image}
                     alt=""
-                    className="aos-init aos-animate add-img"
+                    className="aos-init aos-animate add-img "
                     data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000"
                   />
                 </div>
-                <div className="w-[50%] bg-gradient-to-br from-[#dccaf0] to-[#70d8eb] pt-[280px] px-10">
+                <div className="2xl:w-[50%] py-10 w-full bg-gradient-to-br from-[#dccaf0] to-[#70d8eb]  px-10">
                   <p>日中美容液 シャバーン クリア</p>
                   <h1 className="sm:text-7xl text-5xl font-medium py-4">
                     syabaan clear
@@ -78,7 +78,7 @@ const ProductItem = () => {
                   >
                     <div className="flex justify-center mt-14 relative z-40 w-full h-20">
                       <button
-                        className="add_btn w-full h-full border-black bg-white rounded-full font-bold"
+                        className="add_btn w-full h-full border-black bg-white rounded-full font-bold 2xl:before:block before:hidden"
                         onClick={() => addToCart(product)}
                       >
                         Add To Cart
@@ -95,9 +95,9 @@ const ProductItem = () => {
                   </div> */}
                 </div>
               </div>
-              <div className=" h-[1100px]  bg-gradient-to-br from-[#dccaf0] to-[#70d8eb] overflow-hidden img_bg2 relative flex flex-col justify-center items-center z-50">
+              <div className="h-screen  py-10  bg-gradient-to-br from-[#dccaf0] to-[#70d8eb] overflow-hidden img_bg2 relative flex flex-col justify-center items-center z-50 px-5">
                 <h1
-                  className="border-black text-5xl font-medium bg-transparent w-[600px] h-[130px] border rounded-[50%] text-center items-center flex justify-center text-gray-700 aos-init aos-animate"
+                  className="border-black 2xl:text-5xl text-3xl font-medium bg-transparent lg:w-[600px] w-[300px] h-[130px] 2xl:py-0 py-4 border rounded-[50%] text-center  items-center flex justify-center text-gray-700 aos-init aos-animate"
                   data-aos="flip-left"
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="2000"
@@ -133,9 +133,9 @@ const ProductItem = () => {
                   </div>
                 </div>
               </div>
-              <div className=" h-[1100px] pl-20 bg-gradient-to-br from-[#dccaf0] to-[#70d8eb] overflow-hidden img_bg3 relative flex flex-col justify-center items-center z-50">
+              <div className=" h-screen lg:py-0 py-5 lg:pl-20 pl-3 pr-3  bg-gradient-to-br from-[#dccaf0] to-[#70d8eb] overflow-hidden img_bg3 relative flex flex-col justify-center items-center z-50">
                 <h1
-                  className="border-black text-5xl font-medium bg-transparent w-[600px] h-[130px] border rounded-[50%] text-center items-center flex justify-center text-gray-700 aos-init aos-animate"
+                  className="border-black 2xl:text-5xl text-3xl font-medium bg-transparent  lg:w-[600px] w-[300px] h-[130px] 2xl:py-0 py-4 border rounded-[50%] text-center items-center flex justify-center text-gray-700 aos-init aos-animate"
                   data-aos="flip-left"
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="2000"
@@ -171,12 +171,12 @@ const ProductItem = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-[#dccaf0] to-[#70d8eb] h-auto text-center px-32 py-24 aos-init aos-animate">
+              <div className="bg-gradient-to-br from-[#dccaf0] to-[#70d8eb] h-auto text-center lg:px-32 px-5 py-24 aos-init aos-animate">
                 <h1 className="sm:text-7xl text-5xl font-bold">Ingredient</h1>
                 <img
-                  src="/images/clear-ingredient.png"
+                  src="/src/images/clear-ingredient.png"
                   alt=""
-                  className="aos-init aos-animate img-animate"
+                  className="aos-init aos-animate img-animate my-10"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 />
@@ -204,7 +204,7 @@ const ProductItem = () => {
                 >
                   How To Use
                 </h1>
-                <div className="flex gap-12 px-24 py-10 justify-between ">
+                <div className="flex gap-12 2xl:px-24 px-5 py-10 2xl:justify-between justify-center items-center 2xl:flex-row flex-col">
                   <div className="flex flex-col mt-10">
                     <div
                       className="sm:text-8xl text-5xl flex gap-10 mb-10 aos-init aos-animate"
@@ -257,7 +257,19 @@ const ProductItem = () => {
                 <div className="flex gap-8 mt-auto loop">
                   <div className="flex">
                     <p className="text-6xl w-96">make u more </p>
-                    <img src="/images/heart-icon.svg" alt="" className="pt-6" />
+                    <img
+                      src="/src/images/heart-icon.svg"
+                      alt=""
+                      className="pt-6"
+                    />
+                  </div>
+                  <div className="flex">
+                    <p className="text-6xl w-96">make u more </p>
+                    <img
+                      src="/src/images/heart-icon.svg"
+                      alt=""
+                      className="pt-6"
+                    />
                   </div>
                   <div className="flex">
                     <p className="text-6xl w-96">make u more </p>
@@ -265,15 +277,19 @@ const ProductItem = () => {
                   </div>
                   <div className="flex">
                     <p className="text-6xl w-96">make u more </p>
-                    <img src="/images/heart-icon.svg" alt="" className="pt-6" />
+                    <img
+                      src="/src/images/heart-icon.svg"
+                      alt=""
+                      className="pt-6"
+                    />
                   </div>
                   <div className="flex">
                     <p className="text-6xl w-96">make u more </p>
-                    <img src="/images/heart-icon.svg" alt="" className="pt-6" />
-                  </div>
-                  <div className="flex">
-                    <p className="text-6xl w-96">make u more </p>
-                    <img src="/images/heart-icon.svg" alt="" className="pt-6" />
+                    <img
+                      src="/src/images/heart-icon.svg"
+                      alt=""
+                      className="pt-6"
+                    />
                   </div>
                 </div>
               </div>

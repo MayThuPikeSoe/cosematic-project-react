@@ -41,7 +41,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className="flex justify-between w-full p-5 border border-b-2 panel w-screen top-0 z-50 header">
+    <div className="flex justify-between  p-5 border border-b-2 panel w-screen top-0 z-50 header">
       <div
         className={`hamburger mt-10 ${menu ? "open" : ""}`}
         onClick={menuToggle}

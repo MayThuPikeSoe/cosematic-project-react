@@ -1,8 +1,20 @@
 const ProductCards = () => {
   const productCard = [
-    { id: 1, image: "/images/item-fg01.webp" },
-    { id: 2, image: "/images/item-fg02.webp" },
-    { id: 3, image: "/images/item-fg03.webp" },
+    {
+      id: 1,
+      image:
+        "https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/item-fg01.webp",
+    },
+    {
+      id: 2,
+      image:
+        "https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/item-fg02.webp",
+    },
+    {
+      id: 3,
+      image:
+        "https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/item-fg03.webp",
+    },
   ];
   return (
     <div>

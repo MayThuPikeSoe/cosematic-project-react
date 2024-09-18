@@ -1,7 +1,7 @@
 import "../css/about.css";
 const About = () => {
   return (
-    <div >
+    <div>
       <section className="about md:h-[947px] h-auto flex-col items-center justify-around lg:flex-row flex py-10 px-8">
         <div
           className="img_about relative lg:w-[550px] lg:h-[700px] w-[450px] h-[500px] aos-init aos-animate  "
@@ -10,7 +10,7 @@ const About = () => {
           data-aos-easing="ease-in-sine"
         >
           <img
-            src="/src/images/about-fg.webp"
+            src="https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/about-fg.webp"
             alt=""
             className=" border border-black w-full h-full "
           />

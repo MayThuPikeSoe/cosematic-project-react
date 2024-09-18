@@ -8,6 +8,7 @@ export const CartProvider = ({ children }) => {
       ? JSON.parse(localStorage.getItem("cartItems"))
       : []
   );
+
   console.log("cart", cartItems);
 
   const addToCart = (item) => {
@@ -54,7 +55,6 @@ export const CartProvider = ({ children }) => {
         )
       );
     }
-    
   };
   const getCartTotal = () => {
     return cartItems.reduce(

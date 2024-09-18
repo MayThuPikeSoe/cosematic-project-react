@@ -20,7 +20,7 @@ const ProductCard = () => {
               className="h-[560px] flex flex-col py-10 w-full items-center"
             >
               <img
-                src="/src//images/item-fg01.webp"
+                src="https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/item-fg01.webp"
                 alt=""
                 className="w-[300px]  img"
               />
@@ -49,7 +49,7 @@ const ProductCard = () => {
               className="h-[560px] flex flex-col py-10 w-full items-center"
             >
               <img
-                src="/src/images/item-fg02.webp"
+                src="https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/item-fg02.webp"
                 alt=""
                 className="w-[300px]  img"
               />
@@ -78,7 +78,7 @@ const ProductCard = () => {
               className="h-[560px] flex flex-col py-10 w-full items-center"
             >
               <img
-                src="/src/images/item-fg03.webp"
+                src="https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/item-fg03.webp"
                 alt=""
                 className="w-[300px]  img"
               />
@@ -107,7 +107,7 @@ const ProductCard = () => {
               className="h-[560px] flex flex-col py-10 w-full items-center"
             >
               <img
-                src="/src/images/item-fg04.webp"
+                src="https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/item-fg04.webp"
                 alt=""
                 className="w-[300px]  img"
               />

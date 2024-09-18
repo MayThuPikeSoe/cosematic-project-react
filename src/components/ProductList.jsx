@@ -18,7 +18,7 @@ const ProductList = () => {
               className="h-auto md:h-[831px] w-[100%] relative"
             />
             <img
-              src="/images/man-mask01.svg"
+              src="https://d2w53g1q050m78.cloudfront.net/makeumorcom/uploads/img/top2/man-mask01.svg"
               alt=""
               className="active absolute top-0 left-0 object-cover img_hover h-full w-full hidden 2xl:block "
             />

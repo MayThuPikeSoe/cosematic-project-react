@@ -62,7 +62,6 @@
 }
 .add_btn {
   cursor: pointer;
-  
 }
 .add_btn:before {
   position: absolute;
@@ -110,7 +109,7 @@
 .img_bg2:before {
   position: absolute;
   content: "";
-  background: url(/images/addcart.png) no-repeat;
+  background: url(/src/images/addcart.png) no-repeat;
   top: 0;
   width: 100%;
   z-index: -1;
@@ -120,7 +119,7 @@
 .img_bg3:before {
   position: absolute;
   content: "";
-  background: url(/images/addcart1.png) no-repeat;
+  background: url(/src/images/addcart1.png) no-repeat;
   top: 0;
   width: 100%;
   z-index: -1;
